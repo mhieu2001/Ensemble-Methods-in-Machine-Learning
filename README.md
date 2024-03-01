@@ -12,5 +12,7 @@ The random forest algorithm has a slightly different way of randomly choosing fe
 After splitting the data on the best feature from that subset, we’ll likely want to split again. For this next split, we’ll randomly select three features again to consider. We’ll continue this process until the tree is complete.
 
 One question to consider is how to choose the number of features to randomly select. 
+
 *A good rule of thumb is select as many features as the square root of the total number of features*. 
+
 But if we had a dataset with 25 features, we’d want to randomly select 5 features to consider at every split point.
