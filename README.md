@@ -26,3 +26,21 @@ Nice work! Here are some of the major takeaways about random forests:
 
 ## Gradient Boosting 
 Recall that the base estimators for boosting algorithms tend to be simple and high bias. In contrast to AdaBoost which leveraged the simplest form of decision trees, the decision stump with only 1 level, gradient boosted trees can and actually do tend to include a few more decision branches. Often gradient boosted trees will have up to 32 leaf nodes, which corresponds to a tree depth of 5 levels
+
+## Stacking 
+**Limitations**: Stacking is very powerful in that we remove the occasionally difficult choice of which learning algorithm to use for our problem. Depending on the use case, this benefit does come with some limitations worth noting:
+
+- Because we have an arbitrary number of learning algorithms in use, training an entire stacking model is ***computationally expensive***. This is also true for deployed inference models.
+
+- Such a large model with many parameters means that ***a plethora of data is needed for proper training. Small datasets won’t see significant gains with stacking***. Stacking models typically yields marginal gains over the best single estimator used for the same problem. When successful, a stacked model may reduce error by 2% or less.
+
+
+
+
+
+
+
+
+
+
+
